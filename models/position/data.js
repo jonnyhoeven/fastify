@@ -37,5 +37,5 @@ module.exports = {
         'Werken in de 5-ploegen.',
     ],
     contact: require('../contact/data'),
-    branche: require('../branche/data'),
+    branch: require('../branch/data'),
 }

@@ -32,7 +32,7 @@ module.exports = {
                 }
             },
             contact: require('../contact/schema'),
-            branche: require('../branche/schema'),
+            branch: require('../branch/schema'),
         }
     }
 }
