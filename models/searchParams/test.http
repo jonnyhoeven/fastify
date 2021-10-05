@@ -4,5 +4,28 @@ Content-Type: application/json
 
 {
   "searchQuery": "",
-  "zipcode": "3011AA"
+  "zipcode": "3011AA",
+  "regions": [
+    {
+      "sectors": [],
+      "regions": [
+        {
+          "title": "Drenthe",
+          "filter": true
+        }
+      ],
+      "shiftTypes": [
+        {
+          "title": "2 ploegendienst",
+          "filter": true
+        }
+      ],
+      "educationLevels": [
+        {
+          "title": "Basisonderwijs",
+          "filter": true,
+        }
+      ]
+    }
+  ]
 }
