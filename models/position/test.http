@@ -1,3 +1,5 @@
-# Retrieve zipcode search results
+# Retrieve position by id
 GET 127.0.0.1:3000/position/P053750
 Content-Type: application/json
+
+# @todo create json rest post version for this call
