@@ -9,12 +9,17 @@ module.exports = {
         + 'Lees snel verder!',
     location: 'omgeving Oldenzaal',
     hours: '40 uur',
-    salary: '€ 1.900 - 2.100',
+    salary: {
+        min: 1900,
+        max: 2100,
+        avg: 2000,
+        string: '€ 1.900 - 2.100',
+    },
     employmentType: 'Tijdelijk met uitzicht op vast',
     sector: 'keramische industrie',
     educationLevel: 'lbo vmbo mavo',
     shifttype: 'dagdienst',
-    descriptions: [
+    tasks: [
         'Bedienen, ombouwen en afstellen van de verschillende productielijnen.',
         '(Klein) onderhoud uitvoeren aan de machines.',
         'De technische dienst ondersteunen bij grotere onderhoudswerkzaamheden of storingen.',

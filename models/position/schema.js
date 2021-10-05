@@ -8,12 +8,19 @@ module.exports = {
             intro: {type: 'string'},
             location: {type: 'string'},
             hours: {type: 'string'},
-            salary: {type: 'string'},
+            salary: {
+                type: 'object', properties: {
+                    min: {type: 'number'},
+                    max: {type: 'number'},
+                    avg: {type: 'number'},
+                    string: {type: 'string'},
+                }
+            },
             employmentType: {type: 'string'},
             sector: {type: 'string'},
             educationLevel: {type: 'string'},
             shifttype: {type: 'string'},
-            descriptions: {
+            tasks: {
                 type: 'array',
                 items: {
                     type: 'string',
