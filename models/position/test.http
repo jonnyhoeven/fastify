@@ -1,0 +1,3 @@
+# Retrieve zipcode search results
+GET 127.0.0.1:3000/position/P053750
+Content-Type: application/json
