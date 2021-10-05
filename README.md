@@ -18,6 +18,16 @@
 - [ ] Add security layer
 
 
+### Setup
+```shell
+npm install
+```
+
+### Run
+```shell
+npm run serve
+```
+
 ### Example call
 ```shell
 curl -X POST -H "Content-Type: application/json" \
