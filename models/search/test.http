@@ -1,4 +1,4 @@
-# Retrieve zipcode search results
+# Retrieve zipcode search results with filters
 POST 127.0.0.1:3000/search
 Content-Type: application/json
 

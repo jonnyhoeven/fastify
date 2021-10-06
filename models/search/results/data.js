@@ -1,16 +1,17 @@
+import position from '../../position/data';
+
 module.exports = {
-    hits: 2028,
-    pages: 203,
-    positions: [
-        require('../../position/data'),
-        require('../../position/data'),
-        require('../../position/data'),
-        require('../../position/data'),
-        require('../../position/data'),
-        require('../../position/data'),
-        require('../../position/data'),
-        require('../../position/data'),
-        require('../../position/data'),
-        require('../../position/data'),
-    ]
-}
+  hits: 2028,
+  pages: 203,
+  positions: [
+    position,
+    position,
+    position,
+    position,
+    position,
+    position,
+    position,
+    position,
+    position,
+  ],
+};
