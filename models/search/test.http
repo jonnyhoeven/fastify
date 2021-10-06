@@ -23,7 +23,7 @@ Content-Type: application/json
       "educationLevels": [
         {
           "title": "Basisonderwijs",
-          "filter": true,
+          "filter": true
         }
       ]
     }
