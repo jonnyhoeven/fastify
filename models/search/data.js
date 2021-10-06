@@ -1,5 +1,3 @@
-import searchResults from './results/data';
-
 module.exports = {
   searchParams: {
     searchQuery: 'proces operator',
@@ -52,5 +50,5 @@ module.exports = {
       { title: 'LBO - VMBO - MAVO', hits: 81, filter: false },
     ],
   },
-  results: searchResults,
+  results: require('./results/data'),
 };

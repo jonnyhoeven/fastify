@@ -1,7 +1,3 @@
-import contact0 from '../contact/schema';
-
-import branch0 from '../branch/schema';
-
 module.exports = {
   200: {
     type: 'object',
@@ -43,8 +39,8 @@ module.exports = {
           type: 'string',
         },
       },
-      contact: contact0,
-      branch: branch0,
+      contact: require('../contact/schema'),
+      branch: require('../branch/schema'),
     },
   },
 };

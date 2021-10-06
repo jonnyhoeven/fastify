@@ -1,5 +1,3 @@
-import results0 from './results/schema';
-
 module.exports = {
   200: {
     type: 'object',
@@ -65,7 +63,7 @@ module.exports = {
         },
 
       },
-      results: results0,
+      results: require('./results/schema'),
     },
   },
 };

@@ -1,7 +1,3 @@
-import schema0 from './schema';
-
-import data from './data';
-
 async function routes(fastify/* , options */) {
   fastify.route({
     method: 'GET',
@@ -9,7 +5,7 @@ async function routes(fastify/* , options */) {
     prefix: '/v1',
     constraints: { host: 'localhost' },
     schema: {
-      response: schema0,
+      response: require('./schema'),
     },
     preHandler: (request, reply, done) => {
       // check authentication
@@ -18,7 +14,7 @@ async function routes(fastify/* , options */) {
       done();
     },
     handler(request, reply) {
-      reply.send(data);
+      reply.send(require('./data'));
     },
   });
 }
