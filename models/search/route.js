@@ -1,4 +1,4 @@
-async function routes(fastify, options) {
+async function routes(fastify/*, options*/) {
     fastify.route({
             method: ['POST'],
             url: '/search',

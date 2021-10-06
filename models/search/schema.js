@@ -11,7 +11,7 @@ module.exports = {
                     items: {
                         type: 'object', properties: {
                             title: 'string',
-                            amount: 'number',
+                            hits: 'number',
                             filter: 'boolean',
                         }
                     }
@@ -21,7 +21,7 @@ module.exports = {
                     items: {
                         type: 'object', properties: {
                             title: 'string',
-                            amount: 'number',
+                            hits: 'number',
                             filter: 'boolean',
                         }
                     }
@@ -31,7 +31,7 @@ module.exports = {
                     items: {
                         type: 'object', properties: {
                             title: 'string',
-                            amount: 'number',
+                            hits: 'number',
                             filter: 'boolean',
                         }
                     }
@@ -41,7 +41,7 @@ module.exports = {
                     items: {
                         type: 'object', properties: {
                             title: 'string',
-                            amount: 'number',
+                            hits: 'number',
                             filter: 'boolean',
                         }
                     }
@@ -51,14 +51,14 @@ module.exports = {
                     items: {
                         type: 'object', properties: {
                             title: 'string',
-                            amount: 'number',
+                            hits: 'number',
                             filter: 'boolean',
                         }
                     }
                 },
 
             },
-            results: require('../searchResults/schema')
+            results: require('./results/schema')
         }
     }
 }

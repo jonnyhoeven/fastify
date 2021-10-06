@@ -9,7 +9,7 @@ module.exports = {
                 items: {
                     type: 'object', properties: {
                         title: 'string',
-                        amount: 'number',
+                        hits: 'number',
                         filter: 'boolean',
                     }
                 }
