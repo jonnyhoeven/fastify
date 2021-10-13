@@ -2,10 +2,13 @@ const position = require('./position');
 
 module.exports = {
   searchParams: {
-    searchQuery: 'proces operator',
-    zipcode: null,
-    page: 1,
-    a: 'test',
+    searchQuery: 'ahjsjha',
+    // zipcode: '',
+    // page: 0,
+  },
+  results: {
+    hits: 2028,
+    pages: 203,
     categories: [
       { title: 'Kwaliteit', hits: 91, filter: false },
       { title: 'Laboratorium', hits: 14, filter: false },
@@ -52,10 +55,6 @@ module.exports = {
       { title: 'HBO', hits: 847, filter: false },
       { title: 'LBO - VMBO - MAVO', hits: 81, filter: false },
     ],
-  },
-  results: {
-    hits: 2028,
-    pages: 203,
     positions: [
       position,
       position,

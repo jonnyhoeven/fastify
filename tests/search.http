@@ -3,30 +3,29 @@ POST 127.0.0.1:3000/search
 Content-Type: application/json
 
 {
-  "searchQuery": "",
-  "zipcode": "3011AA",
-  "page": 2,
-  "regions": [
-    {
-      "sectors": [],
-      "regions": [
-        {
-          "title": "Drenthe",
-          "filter": true
-        }
-      ],
-      "shiftTypes": [
-        {
-          "title": "2 ploegendienst",
-          "filter": true
-        }
-      ],
-      "educationLevels": [
-        {
-          "title": "Basisonderwijs",
-          "filter": true
-        }
-      ]
-    }
-  ]
+  "searchParams": {
+    "searchQuery": "",
+    "zipcode": "a",
+    "page": 2,
+    "categories": [],
+    "sectors": [],
+    "regions": [
+      {
+        "title": "Drenthe",
+        "filter": true
+      }
+    ],
+    "shiftTypes": [
+      {
+        "title": "2 ploegendienst",
+        "filter": true
+      }
+    ],
+    "educationLevels": [
+      {
+        "title": "Basisonderwijs",
+        "filter": true
+      }
+    ]
+  }
 }

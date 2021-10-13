@@ -14,17 +14,61 @@ module.exports = {
         // Optional, defaults to page 1.
         page: { type: 'number', nullable: true },
 
-        // Optional
         categories: {
           type: 'array',
           default: [],
-          items: {},
+          items: {
+            type: 'object',
+            properties: {
+              title: { type: 'string' },
+              filter: { type: 'boolean' },
+            },
+          },
         },
-
-        sectors: { type: 'array', default: [] },
-        regions: { type: 'array', default: [] },
-        shiftTypes: { type: 'array', default: [] },
-        educationLevels: { type: 'array', default: [] },
+        sectors: {
+          type: 'array',
+          default: [],
+          items: {
+            type: 'object',
+            properties: {
+              title: { type: 'string' },
+              filter: { type: 'boolean' },
+            },
+          },
+        },
+        regions: {
+          type: 'array',
+          default: [],
+          items: {
+            type: 'object',
+            properties: {
+              title: { type: 'string' },
+              filter: { type: 'boolean' },
+            },
+          },
+        },
+        shiftTypes: {
+          type: 'array',
+          default: [],
+          items: {
+            type: 'object',
+            properties: {
+              title: { type: 'string' },
+              filter: { type: 'boolean' },
+            },
+          },
+        },
+        educationLevels: {
+          type: 'array',
+          default: [],
+          items: {
+            type: 'object',
+            properties: {
+              title: { type: 'string' },
+              filter: { type: 'boolean' },
+            },
+          },
+        },
       },
     },
   },

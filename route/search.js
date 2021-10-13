@@ -1,4 +1,5 @@
 const _ = require('lodash');
+const createError = require('http-errors');
 const data = require('../data/search');
 const schema = require('../schema/search');
 const body = require('../body/search');
@@ -13,13 +14,19 @@ async function routes(fastify/* , options */) {
     body,
     bodyLimit: 10000,
     preHandler: (request, reply, done) => {
-      console.log(request.body);
-      _.assign();
-      // if(request.params.id ='P053750')
+      const { searchParams } = request.body;
+      // console.log(JSON.stringify(searchParams, null, 3));
+      if (!searchParams.searchQuery && !searchParams.zipcode) {
+        reply.send(createError(400, 'SearchQuery and zipcode are empty'));
+      }
       done();
     },
     handler(request, reply) {
-      reply.send(data);
+      const { searchParams } = request.body;
+      // reply.send(new Error('request.body'));
+      const t = _.assign(data, { searchParams });
+      console.log(JSON.stringify(t, null, 3));
+      reply.send(t);
     },
   });
 }
