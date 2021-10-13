@@ -1,4 +1,4 @@
-const position = require('../position/schema');
+const position = require('./position');
 
 module.exports = {
   type: 'object',

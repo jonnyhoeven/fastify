@@ -1,17 +1,21 @@
-const schema = require('./schema');
-const data = require('./data');
+const _ = require('lodash');
+const data = require('../data/search');
+const schema = require('../schema/search');
+const body = require('../body/search');
 
 async function routes(fastify/* , options */) {
   fastify.route({
-    method: 'GET',
-    url: '/position/:id',
+    method: ['POST'],
+    url: '/search',
     prefix: '/v1',
     constraints: { host: 'localhost' },
     schema: { response: { 200: schema } },
+    body,
+    bodyLimit: 10000,
     preHandler: (request, reply, done) => {
-      // check authentication
-      // if(request.params.id !='P053750')
-      // reply.send(new Error('no id in url'))
+      console.log(request.body);
+      _.assign();
+      // if(request.params.id ='P053750')
       done();
     },
     handler(request, reply) {

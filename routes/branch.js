@@ -1,5 +1,5 @@
-const schema = require('./schema');
-const data = require('./data');
+const schema = require('../schema/branch');
+const data = require('../data/branch');
 
 async function routes(fastify/* , options */) {
   fastify.route({

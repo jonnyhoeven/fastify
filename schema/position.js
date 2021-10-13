@@ -1,5 +1,5 @@
-const contact = require('../contact/schema');
-const branch = require('../branch/schema');
+const contact = require('./contact');
+const branch = require('./branch');
 
 module.exports = {
   type: 'object',

@@ -1,5 +1,5 @@
-const contact = require('../contact/data');
-const branch = require('../branch/data');
+const contact = require('./contact');
+const branch = require('./branch');
 
 module.exports = {
   id: 'P053750',

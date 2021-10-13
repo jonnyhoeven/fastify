@@ -1,4 +1,4 @@
-const position = require('../position/data');
+const position = require('./position');
 
 module.exports = {
   searchParams: {
@@ -49,7 +49,7 @@ module.exports = {
     educationLevels: [
       { title: 'Basisonderwijs', hits: 4, filter: false },
       { title: 'HAVO - VWO - MBO', hits: 18, filter: false },
-      { title: 'HBO', hits: 847 },
+      { title: 'HBO', hits: 847, filter: false },
       { title: 'LBO - VMBO - MAVO', hits: 81, filter: false },
     ],
   },
