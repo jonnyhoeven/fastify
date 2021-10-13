@@ -12,7 +12,6 @@ async function routes(fastify/* , options */) {
       response: { 200: schema },
     },
     preHandler: (request, reply, done) => {
-      console.log(request);
       if (!request.params.id) reply.send(createError(400, 'Provide ID'));
       done();
     },
