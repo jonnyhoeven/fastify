@@ -1,5 +1,5 @@
-# Retrieve position by id
-GET 127.0.0.1:3000/position/P053750
+# Retrieve contact by id
+GET 127.0.0.1:3000/contact/C1178
 Content-Type: application/json
 
 # @todo maybe create json rest post version for this call if needed

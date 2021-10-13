@@ -1,3 +1,6 @@
+const schema = require('./schema');
+const data = require('./data');
+
 async function routes(fastify/* , options */) {
   fastify.route({
     method: 'GET',
@@ -5,16 +8,16 @@ async function routes(fastify/* , options */) {
     prefix: '/v1',
     constraints: { host: 'localhost' },
     schema: {
-      response: require('./schema'),
+      response: { 200: schema },
     },
     preHandler: (request, reply, done) => {
       // check authentication
-      // if(request.params.id !='P053750')
+      // if(request.params.id !='B22')
       // reply.send(new Error('no id in url'))
       done();
     },
     handler(request, reply) {
-      reply.send(require('./data'));
+      reply.send(data);
     },
   });
 }

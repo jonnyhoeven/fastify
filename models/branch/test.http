@@ -1,5 +1,5 @@
-# Retrieve position by id
-GET 127.0.0.1:3000/position/P053750
+# Retrieve branch by id
+GET 127.0.0.1:3000/branch/B22
 Content-Type: application/json
 
 # @todo maybe create json rest post version for this call if needed

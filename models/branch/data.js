@@ -1,5 +1,5 @@
 module.exports = {
-  id: 'V22',
+  id: 'B22',
   name: 'Pro Industry Leeuwarden',
   street: 'Schrans 9',
   zipcode: '8932 NA',

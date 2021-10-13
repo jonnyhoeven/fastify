@@ -1,11 +1,15 @@
+const data = require('./data');
+const schema = require('./schema');
+const body = require('./body');
+
 async function routes(fastify/* , options */) {
   fastify.route({
     method: ['POST'],
     url: '/search',
     prefix: '/v1',
     constraints: { host: 'localhost' },
-    schema: require('./schema'),
-    body: require('./body'),
+    schema: { response: { 200: schema } },
+    body,
     bodyLimit: 10000,
     preHandler: (request, reply, done) => {
       console.log(request.body);
@@ -13,7 +17,7 @@ async function routes(fastify/* , options */) {
       done();
     },
     handler(request, reply) {
-      reply.send(require('./data'));
+      reply.send(data);
     },
   });
 }

@@ -1,6 +1,5 @@
-import contact0 from '../contact/data';
-
-import branch0 from '../branch/data';
+const contact = require('../contact/data');
+const branch = require('../branch/data');
 
 module.exports = {
   id: 'P053750',
@@ -22,7 +21,7 @@ module.exports = {
   employmentType: 'Tijdelijk met uitzicht op vast',
   sector: 'keramische industrie',
   educationLevel: 'lbo vmbo mavo',
-  shifttype: 'dagdienst',
+  shiftType: 'dagdienst',
   tasks: [
     'Bedienen, ombouwen en afstellen van de verschillende productielijnen.',
     '(Klein) onderhoud uitvoeren aan de machines.',
@@ -45,6 +44,6 @@ module.exports = {
     'Reiskostenvergoeding.',
     'Werken in de 5-ploegen.',
   ],
-  contact: contact0,
-  branch: branch0,
+  contact,
+  branch,
 };

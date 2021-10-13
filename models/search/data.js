@@ -1,8 +1,11 @@
+const position = require('../position/data');
+
 module.exports = {
   searchParams: {
     searchQuery: 'proces operator',
     zipcode: null,
-    page: null,
+    page: 1,
+    a: 'test',
     categories: [
       { title: 'Kwaliteit', hits: 91, filter: false },
       { title: 'Laboratorium', hits: 14, filter: false },
@@ -50,5 +53,19 @@ module.exports = {
       { title: 'LBO - VMBO - MAVO', hits: 81, filter: false },
     ],
   },
-  results: require('./results/data'),
+  results: {
+    hits: 2028,
+    pages: 203,
+    positions: [
+      position,
+      position,
+      position,
+      position,
+      position,
+      position,
+      position,
+      position,
+      position,
+    ],
+  },
 };
