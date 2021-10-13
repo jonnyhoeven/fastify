@@ -3,10 +3,10 @@ const fastify = require('fastify')({
   logger: true,
 });
 
-fastify.register(require('./routes/branch'));
-fastify.register(require('./routes/contact'));
-fastify.register(require('./routes/position'));
-fastify.register(require('./routes/search'));
+fastify.register(require('./route/branch'));
+fastify.register(require('./route/contact'));
+fastify.register(require('./route/position'));
+fastify.register(require('./route/search'));
 
 fastify.listen(3000, (err/* , address */) => {
   if (err) {
