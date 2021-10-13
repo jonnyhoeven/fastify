@@ -2,7 +2,7 @@ const position = require('./position');
 
 module.exports = {
   searchParams: {
-    searchQuery: 'ahjsjha',
+    // searchQuery: '',
     // zipcode: '',
     // page: 0,
   },

@@ -4,8 +4,9 @@ Content-Type: application/json
 
 {
   "searchParams": {
-    "searchQuery": "",
-    "zipcode": "a",
+    "searchQuery": "search",
+    "zipcode": "zipcode",
+    "invalid": "input",
     "page": 2,
     "categories": [],
     "sectors": [],

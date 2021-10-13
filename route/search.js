@@ -16,17 +16,13 @@ async function routes(fastify/* , options */) {
     preHandler: (request, reply, done) => {
       const { searchParams } = request.body;
       // console.log(JSON.stringify(searchParams, null, 3));
-      if (!searchParams.searchQuery && !searchParams.zipcode) {
-        reply.send(createError(400, 'SearchQuery and zipcode are empty'));
-      }
+      if (!searchParams.searchQuery && !searchParams.zipcode) reply.send(createError(400, 'SearchQuery and zipcode are empty'));
       done();
     },
     handler(request, reply) {
       const { searchParams } = request.body;
-      // reply.send(new Error('request.body'));
-      const t = _.assign(data, { searchParams });
-      console.log(JSON.stringify(t, null, 3));
-      reply.send(t);
+      // if (no results) reply.send(createError(204, 'No search content'));
+      reply.send(_.assign(data, { searchParams }));
     },
   });
 }

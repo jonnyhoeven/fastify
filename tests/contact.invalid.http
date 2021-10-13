@@ -1,0 +1,5 @@
+# Retrieve contact by id
+GET 127.0.0.1:3000/contact/
+Content-Type: application/json
+
+# @todo maybe create json rest post version for this call if needed
